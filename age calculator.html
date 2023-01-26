@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title></title>
+</head>
+<body>
+   <input type="date" id="cal" /> 
+   <button id=""  onclick="age();" >Click</button>
+  <script>
+     function age(){
+
+     var input = document.getElementById("cal").value;  
+	 
+	 var birth = new Date(input);
+	 
+	 var difference= Date.now() - birth.getTime(); 
+	 	 
+	 var  ageDate = new Date(difference); 
+	 var calculated=   Math.abs(ageDate.getFullYear() - 1970);
+	 alert(calculated);
+}
+	
+	
+	
+  </script>
+</body>
+</html>
